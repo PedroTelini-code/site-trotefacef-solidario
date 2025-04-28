@@ -54,6 +54,7 @@ nav a {
 nav a:hover {
     background-color: #344F8A;
     transition: 0.1s;
+    transform: translateY(-5px);
 }
 
 main {
@@ -67,15 +68,15 @@ main {
     align-items: center;
 }
 
-#mainIntroducao {
+.mainIntroducao {
     margin: 15px auto;
     background-color: white;
     border-radius: 10px;
-    width: 1100px;
-    min-height: 500px;
-    position: relative; /* Importante para o posicionamento absoluto do h2 */
-    padding: 0; /* Remove padding padrão */
-    display: block; /* Sobrescreve o flex do seletor geral main */
+    width: 1200px;
+    min-height: 1300px;
+    position: relative; 
+    padding: 0; 
+    display: block; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -86,9 +87,10 @@ main {
 
 .imagem-container h2 {
     position: absolute;
-    top: 0px; /* Ajuste esta valor para posicionar verticalmente */
+    top: 0px; 
     left: 0;
     right: 0;
+    padding-bottom: 10px;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -96,11 +98,11 @@ main {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.containerConteudo h2 {
+.containerConteudoIntroducao h2, .containerConteudoObjetivo h2 {
     position: absolute;
     top: 20px;
     left: 20px;
-    margin: 0; /* Remove margens padrão do h2 */
+    margin: 0; 
     background-color: #0060F5;
     color: white;
     padding: 10px 25px;
@@ -114,14 +116,149 @@ main {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-.containerConteudo {
-    position: relative; /* Container relativo para o h2 absoluto */
+.containerConteudoFormato h2, .containerConteudoGincana h2, .containerConteudoCalculadora {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0; 
+    background-color: #0060F5;
+    color: white;
+    padding: 10px 25px;
+    transform: rotate(-5deg);
+    transform-origin: left top;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.containerConteudoIntroducao {
+    position: relative; 
     width: 100%;
-    height: 100%;
-    padding-top: 70px; /* Espaço para o título não cobrir conteúdo */
+    height: auto;
+    padding-top: 70px 30px 30px 30px;
+    box-sizing: border-box;
 }
 
-#textoIntroducao {
-    font-size: 18px;
+.containerConteudoObjetivo {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    padding-top: 70px 30px 30px 30px;
+    box-sizing: border-box;
+    
 }
 
+.containerConteudoFormato {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    padding-top: 70px 30px 30px 30px;
+    box-sizing: border-box;
+    
+}
+
+.containerConteudoGincana{
+    position: relative; 
+    width: 100%;
+    height: auto;
+    padding-top: 70px 30px 30px 30px;
+    box-sizing: border-box;
+    
+}
+
+.containerConteudoCalculadora{
+    position: relative; 
+    width: 100%;
+    height: auto;
+    padding-top: 70px 30px 30px 30px;
+    box-sizing: border-box;
+    
+}
+
+.mainObjetivo {
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 1200px;
+    min-height: 400px;
+    position: relative; 
+    padding: 0; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mainFormato {
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 1200px;
+    height: 980px;
+    position: relative; 
+    padding: 0; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mainGincana {
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 1200px;
+    height: 1210px;
+    position: relative; 
+    padding: 0; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mainCalculadora {
+    margin: 15px auto;
+    background-color: white;
+    border-radius: 10px;
+    width: 1200px;
+    height: 750px;
+    position: relative; 
+    padding: 0; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+#conteudo {
+    padding-top: 80px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.laranja {
+    background-color: orange;
+}
+.azul {
+    background-color: blue;
+    color: white;
+}
+.preta {
+    background-color: black;
+    color: white;
+}
+.roxo {
+    background-color: purple;
+}
+.verde {
+    background-color: green;
+}
+.vermelha {
+    background-color: red;
+}
